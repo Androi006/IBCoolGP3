@@ -30,7 +30,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#DFDFDF"
+            android:background="#f3f3f3"
             android:padding="10dp"
             android:id="@+id/userContent"
             android:orientation="vertical">
@@ -104,6 +104,7 @@
                         android:layout_height="80dp"
                         android:background="@drawable/background"
                         android:layout_gravity="center"
+                        android:outlineSpotShadowColor="@color/purple_700"
                         >
 
                         <ImageView
@@ -111,13 +112,13 @@
                             android:layout_height="240dp"
                             android:src="@drawable/walllet"
                             android:paddingTop="30dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="10dp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent"
-
                             />
-
                     </androidx.constraintlayout.widget.ConstraintLayout>
                     <TextView
                         android:layout_width="wrap_content"
@@ -132,29 +133,28 @@
                     android:orientation="vertical"
                     android:layout_weight="1">
                     <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
                         android:background="@drawable/background"
-                        android:layout_gravity="center">
+                        android:layout_gravity="center"
+                        >
+
                         <ImageView
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
-                            android:layout_marginTop="2dp"
-                            android:layout_marginBottom="2dp"
-                            android:layout_marginStart="2dp"
-                            android:layout_marginEnd="2dp"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:layout_width="230dp"
+                            android:layout_height="230dp"
                             android:src="@drawable/transfer"
+                            android:paddingTop="18dp"
+                            android:layout_marginRight="8dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
                             />
-
                     </androidx.constraintlayout.widget.ConstraintLayout>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Wallet"
+                        android:text="Transfer"
                         android:layout_gravity="center_horizontal"/>
                 </LinearLayout>
                 <LinearLayout
@@ -164,29 +164,29 @@
                     android:orientation="vertical"
                     android:layout_weight="1">
                     <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
                         android:background="@drawable/background"
-                        android:layout_gravity="center">
+                        android:layout_gravity="center"
+                        >
+
                         <ImageView
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
-                            android:layout_marginTop="2dp"
-                            android:layout_marginBottom="2dp"
-                            android:layout_marginStart="2dp"
-                            android:layout_marginEnd="2dp"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:layout_width="230dp"
+                            android:layout_height="230dp"
                             android:src="@drawable/payment"
+                            android:paddingTop="24dp"
+                            android:paddingLeft="16dp"
+                            android:layout_marginRight="8dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
                             />
-
                     </androidx.constraintlayout.widget.ConstraintLayout>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Wallet"
+                        android:text="Payment"
                         android:layout_gravity="center_horizontal"/>
                 </LinearLayout>
             </LinearLayout>
@@ -203,29 +203,30 @@
                     android:orientation="vertical"
                     android:layout_weight="1">
                     <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
                         android:background="@drawable/background"
-                        android:layout_gravity="center">
+                        android:layout_gravity="center"
+                        android:outlineSpotShadowColor="@color/purple_700"
+                        >
+
                         <ImageView
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
-                            android:layout_marginTop="2dp"
-                            android:layout_marginBottom="2dp"
-                            android:layout_marginStart="2dp"
-                            android:layout_marginEnd="2dp"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:layout_width="330dp"
+                            android:layout_height="330dp"
                             android:src="@drawable/coolpay"
+                            android:paddingTop="55dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="10dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
                             />
-
                     </androidx.constraintlayout.widget.ConstraintLayout>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Wallet"
+                        android:text="Cool Pay"
                         android:layout_gravity="center_horizontal"/>
                 </LinearLayout>
                 <LinearLayout
@@ -235,29 +236,30 @@
                     android:orientation="vertical"
                     android:layout_weight="1">
                     <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
                         android:background="@drawable/background"
-                        android:layout_gravity="center">
-                        <ImageView
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
-                            android:layout_marginTop="2dp"
-                            android:layout_marginBottom="2dp"
-                            android:layout_marginStart="2dp"
-                            android:layout_marginEnd="2dp"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            android:src="@drawable/cash"
-                            />
+                        android:layout_gravity="center"
+                        android:outlineSpotShadowColor="@color/purple_700"
+                        >
 
+                        <ImageView
+                            android:layout_width="650dp"
+                            android:layout_height="650dp"
+                            android:src="@drawable/reward"
+                            android:paddingTop="120dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="50dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            />
                     </androidx.constraintlayout.widget.ConstraintLayout>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Wallet"
+                        android:text="Rewads"
                         android:layout_gravity="center_horizontal"/>
                 </LinearLayout>
                 <LinearLayout
@@ -267,29 +269,30 @@
                     android:orientation="vertical"
                     android:layout_weight="1">
                     <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
                         android:background="@drawable/background"
-                        android:layout_gravity="center">
-                        <ImageView
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
-                            android:layout_marginTop="2dp"
-                            android:layout_marginBottom="2dp"
-                            android:layout_marginStart="2dp"
-                            android:layout_marginEnd="2dp"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            android:src="@drawable/walllet"
-                            />
+                        android:layout_gravity="center"
+                        android:outlineSpotShadowColor="@color/purple_700"
+                        >
 
+                        <ImageView
+                            android:layout_width="650dp"
+                            android:layout_height="650dp"
+                            android:src="@drawable/reward"
+                            android:paddingTop="120dp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="50dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            />
                     </androidx.constraintlayout.widget.ConstraintLayout>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Wallet"
+                        android:text="Rates"
                         android:layout_gravity="center_horizontal"/>
                 </LinearLayout>
             </LinearLayout>
@@ -306,29 +309,30 @@
                     android:orientation="vertical"
                     android:layout_weight="1">
                     <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
                         android:background="@drawable/background"
-                        android:layout_gravity="center">
-                        <ImageView
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
-                            android:layout_marginTop="2dp"
-                            android:layout_marginBottom="2dp"
-                            android:layout_marginStart="2dp"
-                            android:layout_marginEnd="2dp"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            android:src="@drawable/walllet"
-                            />
+                        android:layout_gravity="center"
+                        android:outlineSpotShadowColor="@color/purple_700"
+                        >
 
+                        <ImageView
+                            android:layout_width="340dp"
+                            android:layout_height="340dp"
+                            android:src="@drawable/cash"
+                            android:paddingTop="50dp"
+                            android:paddingLeft="49dp"
+                            android:paddingRight="50dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            />
                     </androidx.constraintlayout.widget.ConstraintLayout>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Wallet"
+                        android:text="Cash-by-Code"
                         android:layout_gravity="center_horizontal"/>
                 </LinearLayout>
                 <LinearLayout
@@ -338,29 +342,30 @@
                     android:orientation="vertical"
                     android:layout_weight="1">
                     <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
                         android:background="@drawable/background"
-                        android:layout_gravity="center">
-                        <ImageView
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
-                            android:layout_marginTop="2dp"
-                            android:layout_marginBottom="2dp"
-                            android:layout_marginStart="2dp"
-                            android:layout_marginEnd="2dp"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            android:src="@drawable/walllet"
-                            />
+                        android:layout_gravity="center"
+                        android:outlineSpotShadowColor="@color/purple_700"
+                        >
 
+                        <ImageView
+                            android:layout_width="340dp"
+                            android:layout_height="340dp"
+                            android:src="@drawable/cash"
+                            android:paddingTop="50dp"
+                            android:paddingLeft="49dp"
+                            android:paddingRight="50dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            />
                     </androidx.constraintlayout.widget.ConstraintLayout>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Wallet"
+                        android:text="Promotions"
                         android:layout_gravity="center_horizontal"/>
                 </LinearLayout>
                 <LinearLayout
@@ -370,29 +375,30 @@
                     android:orientation="vertical"
                     android:layout_weight="1">
                     <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
                         android:background="@drawable/background"
-                        android:layout_gravity="center">
-                        <ImageView
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
-                            android:layout_marginTop="2dp"
-                            android:layout_marginBottom="2dp"
-                            android:layout_marginStart="2dp"
-                            android:layout_marginEnd="2dp"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toTopOf="parent"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            android:src="@drawable/walllet"
-                            />
+                        android:layout_gravity="center"
+                        android:outlineSpotShadowColor="@color/purple_700"
+                        >
 
+                        <ImageView
+                            android:layout_width="340dp"
+                            android:layout_height="340dp"
+                            android:src="@drawable/cash"
+                            android:paddingTop="50dp"
+                            android:paddingLeft="49dp"
+                            android:paddingRight="50dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            />
                     </androidx.constraintlayout.widget.ConstraintLayout>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:text="Wallet"
+                        android:text="More"
                         android:layout_gravity="center_horizontal"/>
                 </LinearLayout>
             </LinearLayout>
