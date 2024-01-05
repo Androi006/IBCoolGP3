@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="@color/unselectedColor">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout2"
+            android:layout_width="350dp"
+            android:layout_height="35dp"
+            app:tabSelectedTextColor="@color/black"
+            app:tabTextColor="@color/black"
+            app:tabBackground="@drawable/tabs_selector"
+            android:background="@color/unselectedColor"
+            app:tabIndicator="@null"
+            app:tabTextAppearance="@style/CustomTextAppearanceTab">
+
+            <!-- TabItems -->
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabStatement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Statement" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabDetailStatement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Detail Statement" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabAccountDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account Details" />
+        </com.google.android.material.tabs.TabLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rcv">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
