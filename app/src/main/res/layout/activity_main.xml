@@ -16,7 +16,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical"
           >
 
@@ -80,8 +80,9 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="khamsy her"
+                            android:textColor="@color/black"
                             android:textStyle="bold"
-                            android:textSize="20sp"
+                            android:textSize="23sp"
                             android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                         <TextView
@@ -171,6 +172,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:text="Wallet"
+                            android:textColor="@color/black"
                             android:layout_gravity="center_horizontal"/>
                     </LinearLayout>
                     <LinearLayout
@@ -202,6 +204,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:text="Transfer"
+                            android:textColor="@color/black"
                             android:layout_gravity="center_horizontal"/>
                     </LinearLayout>
                     <LinearLayout
@@ -234,6 +237,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:text="Payment"
+                            android:textColor="@color/black"
                             android:layout_gravity="center_horizontal"/>
                     </LinearLayout>
                 </LinearLayout>
@@ -274,6 +278,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:text="Cool Pay"
+                            android:textColor="@color/black"
                             android:layout_gravity="center_horizontal"/>
                     </LinearLayout>
                     <LinearLayout
@@ -307,6 +312,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:text="Rewads"
+                            android:textColor="@color/black"
                             android:layout_gravity="center_horizontal"/>
                     </LinearLayout>
                     <LinearLayout
@@ -340,6 +346,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:text="Rates"
+                            android:textColor="@color/black"
                             android:layout_gravity="center_horizontal"/>
                     </LinearLayout>
                 </LinearLayout>
@@ -380,6 +387,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:text="Cash-by-Code"
+                            android:textColor="@color/black"
                             android:layout_gravity="center_horizontal"/>
                     </LinearLayout>
                     <LinearLayout
@@ -413,6 +421,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:text="Promotions"
+                            android:textColor="@color/black"
                             android:layout_gravity="center_horizontal"/>
                     </LinearLayout>
                     <LinearLayout
@@ -446,6 +455,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:text="More"
+                            android:textColor="@color/black"
                             android:layout_gravity="center_horizontal"/>
                     </LinearLayout>
                 </LinearLayout>
@@ -464,6 +474,7 @@
         android:layout_below="@+id/full_screen"
         android:layout_alignParentBottom="true"
         android:layout_gravity="bottom"
+        app:itemTextColor="@color/black"
         android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
