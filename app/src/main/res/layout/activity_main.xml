@@ -23,10 +23,10 @@
             <ImageSwitcher
                 android:id="@+id/imageSwitcher"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="160dp"
                 android:background="#652f91"
                 android:paddingStart="10dp"
-                android:paddingTop="25dp"
+                android:paddingTop="10dp"
                 android:paddingEnd="10dp">
 
                 <ImageView
@@ -139,7 +139,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="20dp"
                     >
                     <LinearLayout
                         android:layout_width="0dp"
@@ -245,7 +245,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
-                    android:layout_marginTop="40dp"
+                    android:layout_marginTop="20dp"
                     >
                     <LinearLayout
                         android:layout_width="0dp"
@@ -354,7 +354,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
-                    android:layout_marginTop="40dp"
+                    android:layout_marginTop="20dp"
                     >
                     <LinearLayout
                         android:layout_width="0dp"
