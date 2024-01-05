@@ -6,6 +6,8 @@ import android.view.KeyEvent;
 import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 
 import android.os.Bundle;
 
@@ -43,12 +45,26 @@ public class Login extends AppCompatActivity {
             // You may also finish() this activity if you don't want to go back to it
         } else {
             // Show an error message or handle invalid PIN
+            showInvalidPinAlert();
         }
     }
 
     // You can add your PIN validation logic here
     private boolean isValidPin(String pin) {
-        // Add your validation logic (e.g., check if it's 6 digits)
-        return pin.length() == 6;
+        return pin.equals("123456");
+    }
+
+    private void showInvalidPinAlert() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Invalid PIN");
+        builder.setMessage("Please enter the correct PIN.");
+        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                // You can perform any action on OK button click, or leave it empty
+            }
+        });
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
     }
 }
