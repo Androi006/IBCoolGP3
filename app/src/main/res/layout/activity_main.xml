@@ -16,17 +16,17 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical"
             >
 
             <ImageSwitcher
                 android:id="@+id/imageSwitcher"
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="160dp"
                 android:background="#652f91"
                 android:paddingStart="10dp"
-                android:paddingTop="25dp"
+                android:paddingTop="10dp"
                 android:paddingEnd="10dp">
 
                 <ImageView
@@ -91,8 +91,9 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="khamsy her"
+                            android:textColor="@color/black"
                             android:textStyle="bold"
-                            android:textSize="20sp"
+                            android:textSize="23sp"
                             android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
                         <TextView
@@ -110,17 +111,19 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="90dp"
+                        <RelativeLayout
+                            android:layout_width="95dp"
                             android:layout_height="35dp"
                             android:background="@drawable/rounded_button_bg"
-                            android:padding="6dp"
+                            android:padding="8dp"
                             >
 
                             <ImageView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_margin="2dp"
                                 android:src="@drawable/warning"
+                                android:id="@+id/iconswarning"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
@@ -141,6 +144,9 @@
                                 android:layout_height="wrap_content"
                                 android:text="Pending"
                                 android:textColor="#fe0024"
+                                android:layout_toEndOf="@+id/iconswarning"
+                               />
+                        </RelativeLayout>
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
@@ -173,7 +179,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
-                    android:layout_marginTop="30dp"
+                    android:layout_marginTop="20dp"
                     >
                     <LinearLayout
                         android:layout_width="0dp"
@@ -208,6 +214,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:text="Wallet"
+                            android:textColor="@color/black"
                             android:layout_gravity="center_horizontal"/>
                     </LinearLayout>
                     <LinearLayout
@@ -239,6 +246,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:text="Transfer"
+                            android:textColor="@color/black"
                             android:layout_gravity="center_horizontal"/>
                     </LinearLayout>
                     <LinearLayout
@@ -274,6 +282,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:text="Payment"
+                            android:textColor="@color/black"
                             android:layout_gravity="center_horizontal"/>
                     </LinearLayout>
                 </LinearLayout>
@@ -281,7 +290,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
-                    android:layout_marginTop="40dp"
+                    android:layout_marginTop="20dp"
                     >
                     <LinearLayout
                         android:layout_width="0dp"
@@ -314,6 +323,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:text="Cool Pay"
+                            android:textColor="@color/black"
                             android:layout_gravity="center_horizontal"/>
                     </LinearLayout>
                     <LinearLayout
@@ -347,6 +357,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:text="Rewads"
+                            android:textColor="@color/black"
                             android:layout_gravity="center_horizontal"/>
                     </LinearLayout>
                     <LinearLayout
@@ -380,6 +391,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:text="Rates"
+                            android:textColor="@color/black"
                             android:layout_gravity="center_horizontal"/>
                     </LinearLayout>
                 </LinearLayout>
@@ -387,7 +399,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="horizontal"
-                    android:layout_marginTop="40dp"
+                    android:layout_marginTop="20dp"
                     >
                     <LinearLayout
                         android:layout_width="0dp"
@@ -420,6 +432,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:text="Cash-by-Code"
+                            android:textColor="@color/black"
                             android:layout_gravity="center_horizontal"/>
                     </LinearLayout>
                     <LinearLayout
@@ -453,6 +466,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:text="Promotions"
+                            android:textColor="@color/black"
                             android:layout_gravity="center_horizontal"/>
                     </LinearLayout>
                     <LinearLayout
@@ -486,6 +500,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:text="More"
+                            android:textColor="@color/black"
                             android:layout_gravity="center_horizontal"/>
                     </LinearLayout>
                 </LinearLayout>
@@ -504,6 +519,7 @@
         android:layout_below="@+id/full_screen"
         android:layout_alignParentBottom="true"
         android:layout_gravity="bottom"
+        app:itemTextColor="@color/black"
         android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
