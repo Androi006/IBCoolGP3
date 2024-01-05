@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_notifications"
+        android:title="Notifications"
+        android:icon="@drawable/notification" />
+    <item
+        android:id="@+id/navigation_support"
+        android:title="Support"
+        android:icon="@drawable/suportt" />
+    <item
+        android:id="@+id/navigation_qr"
+        android:title="My QR"
+        android:icon="@drawable/qr" />
+    <item
+        android:id="@+id/navigation_about"
+        android:title="About us"
+        android:icon="@drawable/about" />
+    <item
+        android:id="@+id/navigation_setting"
+        android:title="Setting"
+        android:icon="@drawable/setting" />
+</menu>
