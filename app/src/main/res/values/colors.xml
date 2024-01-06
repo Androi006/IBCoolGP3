@@ -15,5 +15,5 @@
         <item name="android:textAllCaps">false</item>
         <item name="android:textSize">12sp</item>
     </style>
-
+    <color name="unselectedColortop">#B477FF</color>
 </resources>

@@ -13,4 +13,12 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+<!--    <style name="CardView." parent="CardView">-->
+<!--        <item name="android:foreground">@drawable/rounded_bottom_corners</item>-->
+<!--        <item name="cornerFamily">rounded</item>-->
+<!--        <item name="cornerSizeTopRight">0dp</item>-->
+<!--        <item name="cornerSizeTopLeft">0dp</item>-->
+<!--        <item name="cornerSizeBottomRight">30dp</item>-->
+<!--        <item name="cornerSizeBottomLeft">30dp</item>-->
+<!--    </style>-->
 </resources>
