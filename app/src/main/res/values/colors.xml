@@ -16,4 +16,6 @@
         <item name="android:textSize">12sp</item>
     </style>
     <color name="unselectedColortop">#B477FF</color>
+    <color name="purple">#4B2979</color>
+    <color name="yellow">#FFA500</color>s
 </resources>

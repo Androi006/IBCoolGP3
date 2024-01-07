@@ -20,32 +20,32 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:id="@+id/ibcoollogo"
-        android:src="@drawable/iblogo" />
+        android:src="@drawable/iblogo"
+        android:layout_marginBottom="10dp"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Enter your 6-digits PIN"
         android:textColor="@color/white"
         android:layout_gravity="center"
-        android:textSize="20dp"/>
+        android:textSize="18dp"/>
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
         android:id="@+id/pinedt"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="100dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="30dp"
-        android:ems="15"
-        android:hint="PIN"
+        android:layout_margin="20dp"
+        android:textColor="@color/white"
         android:maxLength="6"
+        android:hint="PIN"
+        android:textColorHint="@color/white"
         android:inputType="numberPassword"
-        android:textSize="20dp"
-        android:selectAllOnFocus="true"/>
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:background="@drawable/edt_background"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -53,92 +53,217 @@
         android:text="FORGOT PIN? CLICK HERE"
         android:textColor="@color/white"
         android:layout_gravity="center"
-        android:textSize="20dp"/>
+        android:textSize="18dp"/>
 
     <ImageView
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:id="@+id/piglogo"
         android:layout_marginLeft="300dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="230dp"
         android:layout_marginBottom="30dp"
         android:src="@drawable/piglogo" />
 
     <LinearLayout
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center"
-        android:layout_marginTop="30dp"
-        >
-    <LinearLayout
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:orientation="horizontal"
-        android:layout_gravity="center"
-        android:layout_marginRight="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/facebtn"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:background="@drawable/face"
+                    android:layout_gravity="center"/>
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/fingerbtn"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:background="@drawable/finger"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Biometric Login"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textSize="18dp"/>
+        </LinearLayout>
 
-        >
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:background="#4B2979"
-        android:layout_gravity="center"
-
-        >
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/face"
-            android:paddingTop="18dp"
-            android:layout_marginRight="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:background="#4B2979"
-        android:layout_gravity="center"
-        >
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/finger"
-            android:paddingTop="18dp"
-            android:layout_marginRight="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/morebtn"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:background="@drawable/morebtn"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="More"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:textSize="18dp"/>
+        </LinearLayout>
     </LinearLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:background="#4B2979"
-        android:layout_gravity="center"
-        >
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/morebtn"
-            android:paddingTop="18dp"
-            android:layout_marginRight="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-    </LinearLayout>
+<!--</LinearLayout>-->
+
+<!--    <ImageView-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:id="@+id/laoflat"-->
+<!--        android:src="@drawable/laoflat"-->
+<!--        android:layout_marginLeft="10dp"/>-->
+
+<!--    <ImageView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:id="@+id/ibcoollogo"-->
+<!--        android:src="@drawable/iblogo" />-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Enter your 6-digits PIN"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:textSize="20dp"/>-->
+
+<!--    <EditText-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/pinedt"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_marginLeft="100dp"-->
+<!--        android:layout_marginStart="30dp"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:layout_marginBottom="30dp"-->
+<!--        android:ems="15"-->
+<!--        android:hint="PIN"-->
+<!--        android:maxLength="6"-->
+<!--        android:inputType="numberPassword"-->
+<!--        android:textSize="20dp"-->
+<!--        android:selectAllOnFocus="true"/>-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="FORGOT PIN? CLICK HERE"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:textSize="20dp"/>-->
+
+<!--    <ImageView-->
+<!--        android:layout_width="80dp"-->
+<!--        android:layout_height="80dp"-->
+<!--        android:id="@+id/piglogo"-->
+<!--        android:layout_marginLeft="300dp"-->
+<!--        android:layout_marginTop="200dp"-->
+<!--        android:layout_marginBottom="30dp"-->
+<!--        android:src="@drawable/piglogo" />-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        >-->
+<!--    <LinearLayout-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginRight="80dp"-->
+
+<!--        >-->
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="80dp"-->
+<!--        android:layout_height="80dp"-->
+<!--        android:background="#4B2979"-->
+<!--        android:layout_gravity="center"-->
+
+<!--        >-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:src="@drawable/face"-->
+<!--            android:paddingTop="18dp"-->
+<!--            android:layout_marginRight="8dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            />-->
+
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="80dp"-->
+<!--        android:layout_height="80dp"-->
+<!--        android:background="#4B2979"-->
+<!--        android:layout_gravity="center"-->
+<!--        >-->
+<!--        <ImageView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:src="@drawable/finger"-->
+<!--            android:paddingTop="18dp"-->
+<!--            android:layout_marginRight="8dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            />-->
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--    </LinearLayout>-->
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="80dp"-->
+<!--        android:layout_height="80dp"-->
+<!--        android:background="#4B2979"-->
+<!--        android:layout_gravity="center"-->
+<!--        >-->
+<!--        <ImageView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:src="@drawable/morebtn"-->
+<!--            android:paddingTop="18dp"-->
+<!--            android:layout_marginRight="8dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            />-->
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--    </LinearLayout>-->
 
 
 

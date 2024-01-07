@@ -202,7 +202,7 @@
                         android:id="@+id/text_view_codenuumber2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="XXXXXXXX"
+                        android:text="********"
                         android:layout_below="@id/text_view"
                         android:drawableRight="@drawable/show"
                         android:drawablePadding="120dp"
